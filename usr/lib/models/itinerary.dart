@@ -42,100 +42,192 @@ class Activity {
   });
 }
 
-// Mock Data for a sample trip to Paris
+// Mock Data for Leh & Kashmir Trip
 final Trip mockTrip = Trip(
-  destination: 'Paris, France',
-  dates: 'Oct 15 - Oct 17, 2023',
+  destination: 'Leh & Kashmir, India',
+  dates: 'Apr 13 - Apr 17, 2026',
   imageUrl:
-      'https://images.unsplash.com/photo-1502602898657-3e91760cbb34?q=80&w=1000&auto=format&fit=crop',
+      'https://images.unsplash.com/photo-1595815771614-ade9d652a65d?q=80&w=1000&auto=format&fit=crop', // Beautiful Kashmir/Ladakh landscape
   days: [
     TripDay(
       dayName: 'Day 1',
-      date: 'Oct 15',
+      date: 'Apr 13',
       activities: [
         Activity(
-          time: '10:00 AM',
-          title: 'Arrival at CDG Airport',
+          time: '07:05 AM',
+          title: 'Arrival in Leh',
           description:
-              'Take the RER B train to the city center. Check into the hotel and freshen up.',
+              'Land at Kushok Bakula Rimpochee Airport. Take a prepaid taxi to your hotel.',
           icon: Icons.flight_land,
-          location: 'Charles de Gaulle Airport',
+          location: 'Leh Airport (IXL)',
         ),
         Activity(
-          time: '01:00 PM',
-          title: 'Lunch at Le Marais',
-          description: 'Enjoy some classic French onion soup and a fresh baguette.',
-          icon: Icons.restaurant,
-          location: 'Le Marais District',
-        ),
-        Activity(
-          time: '03:30 PM',
-          title: 'Eiffel Tower Visit',
+          time: '08:30 AM',
+          title: 'Check-in & Strict Acclimatization',
           description:
-              'Pre-booked tickets for the summit. Don\'t forget your camera for the sunset views!',
-          icon: Icons.camera_alt,
-          location: 'Champ de Mars',
+              'Hotel Suggestions (Budget-Friendly): Shaolin Ladakh, Sangaylay Palace, or Jan Palace. \n\nCRITICAL: Rest completely for the first 12-24 hours to acclimatize to the high altitude (11,500 ft). Do not rush out.',
+          icon: Icons.hotel,
+          location: 'Leh City',
         ),
         Activity(
-          time: '07:30 PM',
-          title: 'Seine River Cruise',
-          description: 'Evening sightseeing cruise to see the city lights.',
-          icon: Icons.directions_boat,
-          location: 'Port de la Bourdonnais',
+          time: '04:30 PM',
+          title: 'Sunset at Shanti Stupa',
+          description:
+              'Take a light, slow walk or cab to Shanti Stupa for panoramic views of Leh city and the surrounding mountains at sunset.',
+          icon: Icons.wb_twilight,
+          location: 'Shanti Stupa, Leh',
+        ),
+        Activity(
+          time: '07:00 PM',
+          title: 'Leh Main Market',
+          description:
+              'Stroll through the local market. Grab a light dinner (try local Thukpa or Momos) and return to the hotel early.',
+          icon: Icons.storefront,
+          location: 'Leh Market',
         ),
       ],
     ),
     TripDay(
       dayName: 'Day 2',
-      date: 'Oct 16',
+      date: 'Apr 14',
       activities: [
         Activity(
           time: '09:00 AM',
-          title: 'Louvre Museum',
-          description: 'Guided tour focusing on the Mona Lisa and Venus de Milo.',
-          icon: Icons.museum,
-          location: 'Musée du Louvre',
+          title: 'Magnetic Hill & Sangam',
+          description:
+              'Drive towards Magnetic Hill to experience the rare optical illusion where vehicles seem to defy gravity. Continue to Sangam, the breathtaking confluence of the Indus and Zanskar rivers.',
+          icon: Icons.landscape,
+          location: 'Leh-Kargil Highway',
         ),
         Activity(
-          time: '01:30 PM',
-          title: 'Picnic at Tuileries Garden',
-          description: 'Grab some cheese and wine for a relaxing afternoon break.',
-          icon: Icons.park,
-          location: 'Jardin des Tuileries',
+          time: '01:00 PM',
+          title: 'Gurudwara Pathar Sahib',
+          description:
+              'Visit this highly revered Gurudwara maintained by the Indian Army. Enjoy the peaceful langar (community meal) for lunch.',
+          icon: Icons.temple_hindu,
+          location: 'Leh-Kargil Highway',
         ),
         Activity(
-          time: '04:00 PM',
-          title: 'Shopping at Champs-Élysées',
-          description: 'Walk up the avenue towards the Arc de Triomphe.',
-          icon: Icons.shopping_bag,
-          location: 'Avenue des Champs-Élysées',
+          time: '03:30 PM',
+          title: 'Leh Palace & Thiksey Monastery',
+          description:
+              'Explore the historic 17th-century Leh Palace. If time permits, visit Thiksey Monastery, known for its resemblance to the Potala Palace in Lhasa.',
+          icon: Icons.account_balance,
+          location: 'Leh Outskirts',
         ),
       ],
     ),
     TripDay(
       dayName: 'Day 3',
-      date: 'Oct 17',
+      date: 'Apr 15',
       activities: [
         Activity(
-          time: '10:00 AM',
-          title: 'Explore Montmartre',
-          description: 'Visit the Sacré-Cœur Basilica and the artists\' square.',
+          time: '08:50 AM',
+          title: 'Flight to Srinagar',
+          description:
+              'Board your morning flight from Leh. Enjoy the spectacular aerial views of the snow-capped Himalayas.',
+          icon: Icons.flight_takeoff,
+          location: 'Leh Airport -> Srinagar Airport',
+        ),
+        Activity(
+          time: '10:30 AM',
+          title: 'Check-in at Srinagar',
+          description:
+              'Hotel Suggestions (Budget-Friendly): Hotel Hilltop, Hotel Mirina, or a Budget Houseboat on Dal/Nigeen Lake for a rare, authentic Kashmiri experience.',
+          icon: Icons.houseboat,
+          location: 'Srinagar',
+        ),
+        Activity(
+          time: '01:00 PM',
+          title: 'Indira Gandhi Memorial Tulip Garden',
+          description:
+              'MUST VISIT: April is peak bloom season! Witness Asia\'s largest tulip garden with millions of flowers against the backdrop of the Zabarwan Range.',
+          icon: Icons.local_florist,
+          location: 'Zabarwan Range, Srinagar',
+        ),
+        Activity(
+          time: '04:00 PM',
+          title: 'Mughal Gardens',
+          description:
+              'Visit the historic terraced gardens: Shalimar Bagh and Nishat Bagh, featuring beautiful fountains and Chinar trees.',
+          icon: Icons.park,
+          location: 'Dal Lake Vicinity',
+        ),
+        Activity(
+          time: '06:00 PM',
+          title: 'Sunset Shikara Ride',
+          description:
+              'Take a relaxing 1-2 hour Shikara (wooden boat) ride on Dal Lake as the sun sets. Shop from the floating market.',
+          icon: Icons.rowing,
+          location: 'Dal Lake',
+        ),
+      ],
+    ),
+    TripDay(
+      dayName: 'Day 4',
+      date: 'Apr 16',
+      activities: [
+        Activity(
+          time: '08:00 AM',
+          title: 'Day Trip (Choose Your Vibe)',
+          description:
+              'OPTION A (Snow & Gondola): Head to Gulmarg. Take the famous Gondola ride to Apharwat Peak for snow activities.\n\nOPTION B (Lush Valleys): Head to Pahalgam. Visit the incredibly scenic Aru Valley and Betaab Valley.',
+          icon: Icons.alt_route,
+          location: 'Gulmarg OR Pahalgam',
+        ),
+        Activity(
+          time: '01:00 PM',
+          title: 'Explore & Lunch',
+          description:
+              'Enjoy the breathtaking landscapes of your chosen destination. Hire a local pony or ATV if you wish to explore deeper into the valleys.',
+          icon: Icons.camera_alt,
+          location: 'Day Trip Location',
+        ),
+        Activity(
+          time: '06:00 PM',
+          title: 'Return to Srinagar',
+          description:
+              'Head back to your hotel/houseboat in Srinagar. Enjoy a traditional Kashmiri Wazwan dinner.',
+          icon: Icons.restaurant,
+          location: 'Srinagar',
+        ),
+      ],
+    ),
+    TripDay(
+      dayName: 'Day 5',
+      date: 'Apr 17',
+      activities: [
+        Activity(
+          time: '09:00 AM',
+          title: 'Shankaracharya Temple',
+          description:
+              'Start your morning with a short climb to this ancient temple. It offers the best panoramic bird\'s-eye view of Srinagar city and Dal Lake.',
           icon: Icons.church,
-          location: 'Montmartre',
+          location: 'Shankaracharya Hill',
         ),
         Activity(
-          time: '02:00 PM',
-          title: 'Café Culture',
-          description: 'Relax at Café des Deux Moulins (from the movie Amélie).',
-          icon: Icons.local_cafe,
-          location: 'Rue Lepic',
+          time: '10:30 AM',
+          title: 'Local Shopping',
+          description:
+              'Quick stop at Lal Chowk or Polo View market to buy authentic Kashmiri souvenirs: Pashmina shawls, Saffron, and Walnuts.',
+          icon: Icons.shopping_bag,
+          location: 'Srinagar City Center',
         ),
         Activity(
-          time: '08:00 PM',
-          title: 'Farewell Dinner',
-          description: 'Fine dining experience to wrap up the trip.',
-          icon: Icons.wine_bar,
-          location: 'Latin Quarter',
+          time: '11:30 AM',
+          title: 'Head to Airport',
+          description:
+              'Depart for Srinagar Airport (SXR). Security checks here take longer than usual, so arriving 2.5 to 3 hours early is highly recommended.',
+          icon: Icons.directions_car,
+          location: 'Srinagar Airport',
+        ),
+        Activity(
+          time: '02:40 PM',
+          title: 'Flight Back Home',
+          description:
+              'Board your 14:40 flight back home, carrying beautiful memories of the Himalayas and Kashmir Valley.',
+          icon: Icons.flight_takeoff,
+          location: 'Srinagar Airport (SXR)',
         ),
       ],
     ),
